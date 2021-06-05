@@ -44,7 +44,7 @@ public class CodeGenerator {
         final String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
 //        gc.setOutputDir("D:\\test");
-        gc.setAuthor("wly");
+        gc.setAuthor("cjly");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
         gc.setServiceName("%sService");
@@ -62,7 +62,7 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(null);
-        pc.setParent("com.example");
+        pc.setParent("cjly.questionnaire");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -113,8 +113,8 @@ public class CodeGenerator {
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         strategy.setSuperControllerClass("cjly.questionnaire.controller.BaseController");
-        strategy.setInclude(scanner("表名，分割").split(","));
-        strategy.setSuperEntityColumns("id", "created", "modified", "status");
+        strategy.setInclude(scanner("表名，多个逗号分割").split(","));
+        strategy.setSuperEntityColumns("id", "created", "modified");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
