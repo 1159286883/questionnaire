@@ -113,7 +113,7 @@ public class CodeGenerator {
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         strategy.setSuperControllerClass("cjly.questionnaire.controller.BaseController");
-        strategy.setInclude(scanner("表名，多个逗号分割").split(","));
+        strategy.setInclude(scanner("表名，分割").split(","));
         strategy.setSuperEntityColumns("id", "created", "modified", "status");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
