@@ -10,35 +10,24 @@
         <div class="fly-panel" style="margin-bottom: 0;">
 
           <div class="fly-panel-title fly-filter">
-            <a href="" class="layui-this">综合</a>
+            <a href="" class="layui-this">全部问卷</a>
             <span class="fly-mid"></span>
-            <a href="">未结</a>
+            <a href="">星标问卷</a>
             <span class="fly-mid"></span>
-            <a href="">已结</a>
+            <a href="">已发布问卷</a>
             <span class="fly-mid"></span>
-            <a href="">精华</a>
+            <a href="">待发布问卷</a>
             <span class="fly-filter-right layui-hide-xs">
             <a href="" class="layui-this">按最新</a>
             <span class="fly-mid"></span>
-            <a href="">按热议</a>
+            <a href="">按热度</a>
           </span>
           </div>
 
-          <@posts category_id=currentCategoryId pn=pn size=2>
 
-            <ul class="fly-list">
-              <#list results.records as post>
-                <@plisting post></@plisting>
-              </#list>
-            </ul>
-
-            <@paging results></@paging>
-
-          </@posts>
 
 
         </div>
-        <#include "/inc/right.ftl" />
       </div>
 
 

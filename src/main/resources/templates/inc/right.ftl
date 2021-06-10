@@ -3,17 +3,7 @@
     <dl class="fly-panel fly-list-one">
         <dt class="fly-panel-title">本周热议</dt>
 
-        <@hots>
 
-            <#list results as ans>
-                <dd>
-                    <a href="/post/${ans.id}">${ans.title}</a>
-                    <span><i class="iconfont icon-pinglun1"></i> ${ans.commentCount}</span>
-                </dd>
-            </#list>
-
-
-        </@hots>
 
 
 
