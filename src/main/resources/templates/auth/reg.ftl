@@ -13,9 +13,9 @@
                         <div class="layui-form layui-form-pane">
                             <form method="post">
                                 <div class="layui-form-item">
-                                    <label for="L_email" class="layui-form-label">邮箱</label>
+                                    <label for="L_email" class="layui-form-label">手机号</label>
                                     <div class="layui-input-inline">
-                                        <input type="text" id="L_email" name="email" required lay-verify="email" autocomplete="off" class="layui-input" value="11111@qq.com">
+                                        <input type="text" id="L_email" name="email" required lay-verify="phone" autocomplete="off" class="layui-input" value="11111@qq.com">
                                     </div>
                                     <div class="layui-form-mid layui-word-aux">将会成为您唯一的登入名</div>
                                 </div>
