@@ -44,5 +44,6 @@ public class Questionnaire extends BaseEntity {
 
     private String username;
 
+    private String useravatar;
 
 }
