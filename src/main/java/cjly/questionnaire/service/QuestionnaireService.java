@@ -1,6 +1,8 @@
 package cjly.questionnaire.service;
 
 import cjly.questionnaire.entity.Questionnaire;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface QuestionnaireService extends IService<Questionnaire> {
 
+    IPage paging(Page page, Long Id, String order);
 }
